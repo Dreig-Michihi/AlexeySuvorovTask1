@@ -2,9 +2,7 @@ const list = document.getElementById("ul-main");
 const btn = document.getElementById("add-button");
 const input = document.getElementById("input-main");
 
-btn.addEventListener("click", function (event) {
-  addInputValueToList();
-});
+btn.addEventListener("click", addInputValueToList);
 input.addEventListener("keydown", function (event) {
   if (event.key === "Enter" && document.activeElement === input) {
     addInputValueToList();
